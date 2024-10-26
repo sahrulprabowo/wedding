@@ -67,10 +67,7 @@
 
 	</head>
 	<body>
-	<audio autoplay="true" loop hidden>
-  	<source src="lagu.mp3" type="audio/mpeg">
-  	</audio>
-		
+	
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
@@ -95,6 +92,11 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>W.R Rendra &amp;Susi susanti</h1>
 							<h2></h2>
+						<button onclick="audio.play();" class="btn btn-primary btn-sm">Putar Lagu</button>
+							<script type="text/javascript">
+								const audio = new Audio();
+								audio.src = "lagu.mp3";
+							</script>
 						
 					</div>
 				</div>
